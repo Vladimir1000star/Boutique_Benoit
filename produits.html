@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catalogue produits - Boutique Vladimir</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Nos Produits</h1>
+
+    <nav class="links" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html" class="active">Produits</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div id="cart-summary" title="Voir le panier">Panier : <span id="cart-count">0</span> article(s)</div>
+  </header>
+  <main>
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Rechercher un produit..."
+    style="width: 100%; padding: 12px; margin-bottom: 20px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc;"
+  />
+
+  <!-- Ensuite tes sections produit... -->
+
+  <main>
+    <section class="produit">
+      <img src="images/huile.webp" alt="huile" width="200" />
+      <h2>Huile</h2>
+      <p>Huile raffinée pour la cuisson et la friture.</p>
+      <p>Prix : 13 000 FCFA</p>
+      <button class="add-to-cart" data-name="Huile" data-price="13000">Ajouter au panier</button>
+    </section>
+
+    <section class="produit">
+      <img src="images/Darling Mother.webp" alt="Darling Mother" width="200" />
+      <h2>Darling Mother</h2>
+      <p>La meilleure qualité de riz, juste un délice.</p>
+      <p>Prix : 12 500 FCFA</p>
+      <button class="add-to-cart" data-name="Darling Mother" data-price="12500">Ajouter au panier</button>
+    </section>
+
+    <section class="produit">
+      <img src="images/yoplait nature.webp" alt="Yoplait Nature" width="200" />
+      <h2>Yoplait Nature</h2>
+      <p>Très nourrissant pour les enfants.</p>
+      <p>Prix : 500 FCFA</p>
+      <button class="add-to-cart" data-name="Yoplait Nature" data-price="500">Ajouter au panier</button>
+    </section>
+
+    <section class="produit">
+      <img src="images/Sardine.webp" alt="Sardine" width="200" />
+      <h2>Sardine</h2>
+      <p>Bien conservée, prête à consommer.</p>
+      <p>Prix : 400 FCFA</p>
+      <button class="add-to-cart" data-name="Sardine" data-price="400">Ajouter au panier</button>
+    </section>
+  </main>
+
+  <footer style="text-align: center; padding: 15px; background: #ddd; margin-top: 30px;">
+    <p>&copy; 2025 Boutique Vladimir</p>
+  </footer>
+
+  <!-- Popup panier -->
+  <div id="cart-popup" style="display:none;">
+    <h3>Votre panier</h3>
+    <ul id="cart-items"></ul>
+    <p id="cart-total"></p>
+    <button id="close-cart">Fermer</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
